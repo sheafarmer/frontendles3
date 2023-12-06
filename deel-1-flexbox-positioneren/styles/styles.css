@@ -10,6 +10,11 @@ body{
     padding: 0;
 }
 
+/* Ik heb hier gebruik gemaakt van de Parent/Child
+   Omdat ik denk (kan fout zitten) dat we hier later meer gebruik van gaan maken
+   Ipv 100de classes aan te maken*/
+
+
 /*Opdracht 1*/
 
 .opdracht-1>ul{
@@ -20,24 +25,68 @@ body{
 /*Opdracht 2*/
 
 .opdracht-2>ul{
-    /*display: flex;*/
+    display: flex;
+}
 
+.opdracht-2 ul li:nth-child(1){
+    flex-basis: 300px;
+}
+
+.opdracht-2 ul li:nth-child(2){
+    flex-basis: 300px;
+}
+
+.opdracht-2 ul li:nth-child(3){
+    flex-basis: 300px;
 }
 
 /*Opdracht 3*/
 
-.opdracht-3{
+.opdracht-3 ul{
+    display: flex;
+    flex-direction: column;
+}
 
+/*Zou hier nog een child kunnen toevoegen voor flex-start maar de eerst blijft bij flex-start*/
+
+.opdracht-3 ul li:nth-child(2){
+    align-self: center;
+}
+
+.opdracht-3 ul li:nth-child(3){
+    align-self: flex-end;
 }
 
 /*Opdracht 4*/
 
-.opdracht-4{
-
+.opdracht-4>ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+
 
 /*Opdracht 5*/
 
-.opdracht-5{
+/*Kreeg het niet verspreid..*/
 
+.opdracht-5 div{
+    display: flex;
+    justify-content: space-between;
+    border: red 2px solid;
+    flex-direction: row;
 }
+
+.opdracht-5 ul{
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.opdracht-5 li{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
