@@ -1,1 +1,28 @@
 /*Schrijf hier jouw CSS*/
+
+/* Dit is het laatste beetje wat ik heb kunnen doen excuus*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    flex-basis: 160px;
+}
+
+main {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    flex-basis: 160px;
+}
+
+
+
+
+
